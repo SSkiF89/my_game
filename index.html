@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Своя игра</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>СВОЯ ИГРА</h1>
+        </header>
+        
+        <div class="game-board" id="gameBoard">
+            <!-- Категории и вопросы будут загружены через JS -->
+        </div>
+        
+        <div class="question-modal" id="questionModal">
+            <div class="modal-content">
+                <div class="question-text" id="questionText"></div>
+                <div class="question-answer" id="questionAnswer"></div>
+                <button class="show-answer-btn" id="showAnswerBtn">Показать ответ</button>
+                <button class="close-btn" id="closeBtn">Закрыть</button>
+            </div>
+        </div>
+    </div>
+	<div class="cat-warning-modal" id="catWarningModal">
+    <div class="modal-content">
+        <h2>КОТ В МЕШКЕ!</h2>
+        <p>Этот вопрос будет передан другому игроку</p>
+        <button id="confirmCatBtn">Открыть вопрос</button>
+    </div>
+	</div>
+
+    <audio id="clickSound" src="sounds/click.mp3"></audio>
+    <audio id="thinkingSound" src="sounds/thinking.flac"></audio>
+	<audio id="catSound" src="sounds/cat.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
